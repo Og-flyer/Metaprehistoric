@@ -1,0 +1,22 @@
+[
+{
+    "name": "T-Rex",
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Saurischia",
+    "family": "Tyrannosauridae",
+    "genus": "Tyrannosaurus",
+    "species": "rex"
+},
+{
+    "name": "Velociraptor",
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Reptilia",
+    "order": "Saurischia",
+    "family": "Dromaeosauridae", 
+    "genus": "Velociraptor",
+    "species": "mongoliensis"
+}
+]
