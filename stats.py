@@ -14,10 +14,9 @@ def locate_Answer():
 def find_creature(name):
     creatures = loadDATA()
     for creature in creatures:
-        if creature["name"] == name:
+        if creature["name"].lower() == name.lower():
             return creature
-    return None 
-
+    return None
 
 def gameplay():
     Daily_chosen = locate_Answer()
