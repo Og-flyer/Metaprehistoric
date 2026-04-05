@@ -5,9 +5,10 @@
     "phylum": "Chordata",
     "class": "Reptilia",
     "order": "Saurischia",
+    "clade": "Theropoda",
     "family": "Tyrannosauridae",
     "genus": "Tyrannosaurus",
-    "species": "rex"
+    "species": "Tyrannosaurus rex"
 },
 {
     "name": "Velociraptor",
@@ -15,8 +16,9 @@
     "phylum": "Chordata",
     "class": "Reptilia",
     "order": "Saurischia",
+    "clade": "Theropoda",
     "family": "Dromaeosauridae", 
     "genus": "Velociraptor",
-    "species": "mongoliensis"
+    "species": "Velociraptor mongoliensis"
 }
 ]
