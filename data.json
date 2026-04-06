@@ -1,24 +1,24 @@
 [
 {
     "name": "T-Rex",
-    "kingdom": "Animalia",
-    "phylum": "Chordata",
-    "class": "Reptilia",
-    "order": "Saurischia",
-    "clade": "Theropoda",
-    "family": "Tyrannosauridae",
-    "genus": "Tyrannosaurus",
-    "species": "Tyrannosaurus rex"
+    "kingdom": {"value": "Animalia", "wiki": "https://en.wikipedia.org/wiki/Animal"},
+    "phylum": {"value": "Chordata", "wiki": "https://en.wikipedia.org/wiki/Chordate"},
+    "class": {"value": "Reptilia", "wiki": "https://en.wikipedia.org/wiki/Reptile"},
+    "order": {"value": "Saurischia", "wiki": "https://en.wikipedia.org/wiki/Saurischia"},
+    "clade": {"value": "Theropoda", "wiki": "https://en.wikipedia.org/wiki/Theropod"},
+    "family": {"value": "Tyrannosauridae", "wiki": "https://en.wikipedia.org/wiki/Tyrannosauridae"},
+    "genus": {"value": "Tyrannosaurus", "wiki": "https://en.wikipedia.org/wiki/Tyrannosaurus"},
+    "species": {"value": "Tyrannosaurus rex", "wiki": "https://en.wikipedia.org/wiki/Tyrannosaurus_rex"}
 },
 {
     "name": "Velociraptor",
-    "kingdom": "Animalia",
-    "phylum": "Chordata",
-    "class": "Reptilia",
-    "order": "Saurischia",
-    "clade": "Theropoda",
-    "family": "Dromaeosauridae", 
-    "genus": "Velociraptor",
-    "species": "Velociraptor mongoliensis"
+    "kingdom": {"value": "Animalia", "wiki": "https://en.wikipedia.org/wiki/Animal"},
+    "phylum": {"value": "Chordata", "wiki": "https://en.wikipedia.org/wiki/Chordate"},
+    "class": {"value": "Reptilia", "wiki": "https://en.wikipedia.org/wiki/Reptile"},
+    "order": {"value": "Saurischia", "wiki": "https://en.wikipedia.org/wiki/Saurischia"},
+    "clade": {"value": "Theropoda", "wiki": "https://en.wikipedia.org/wiki/Theropod"},
+    "family": {"value": "Dromaeosauridae", "wiki": "https://en.wikipedia.org/wiki/Dromaeosauridae"}, 
+    "genus": {"value": "Velociraptor", "wiki": "https://en.wikipedia.org/wiki/Velociraptor"},
+    "species": {"value": "Velociraptor mongoliensis", "wiki": "https://en.wikipedia.org/wiki/Velociraptor_mongoliensis"}
 }
 ]

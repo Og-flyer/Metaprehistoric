@@ -27,11 +27,17 @@ if st.button("Guess!"):
     if guess_DATA["name"] == Daily_chosen_DATA["name"]:
         st.success(f"Correct! The answer was {Daily_chosen_DATA['name']}")
         for i in Daily_chosen_DATA:
-            st.write(f"{i}: {Daily_chosen_DATA[i]}")
+            if i == "name":
+                continue
+            st.write(f"{i}: {Daily_chosen_DATA[i]['value']}")
+        st.markdown(Daily_chosen_DATA["species"]["wiki"])
     else:
         st.error("Wrong!")
+        Last_Match = None
         for i in Daily_chosen_DATA:
             if i == "name":
                 continue
-            elif guess_DATA[i] == Daily_chosen_DATA[i]:
-                st.write(f"{i}: {Daily_chosen_DATA[i]}")
+            elif guess_DATA[i]["value"] == Daily_chosen_DATA[i]["value"]:
+                st.write(f"{i}: {Daily_chosen_DATA[i]['value']}")
+                Last_Match = i
+        st.markdown(Daily_chosen_DATA[Last_Match]["wiki"])

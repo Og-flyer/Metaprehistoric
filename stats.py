@@ -28,18 +28,20 @@ def gameplay():
             print("please write another thing!")
             continue
         Daily_chosen_DATA = Daily_chosen
-        if guess == Daily_chosen["name"]:
+        if guess == Daily_chosen["name"].lower():
             print("You won!")
             print("Here:")
             for i in Daily_chosen_DATA:
-                print(Daily_chosen_DATA[i])
+                if i == "name":
+                    continue
+                print(Daily_chosen_DATA[i]["value"])
             win = True
         else:
             for i in Daily_chosen_DATA:
                 if i == "name":
                     continue
                 elif guess_DATA[i] == Daily_chosen_DATA[i]:
-                    print(Daily_chosen_DATA[i])
+                    print(Daily_chosen_DATA[i]["value"])
                 else:
                     pass
             
