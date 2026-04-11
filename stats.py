@@ -28,6 +28,16 @@ def find_creature(name):
     return None
 
 def get_wiki_image(wiki):
+    try:
+        title = wiki.split("/wiki/")[-1]
+        api = f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
+        headers = {"User-Agent": "Metaprehistoric/1.0"}
+        response = requests.get(api, headers=headers)
+        data = response.json()
+        return data.get("thumbnail", {}).get("source", None)
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
 
 def gameplay():
     Daily_chosen = locate_Answer()

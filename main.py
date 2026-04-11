@@ -1,6 +1,6 @@
 import sys
-from stats import gameplay
+from stats import get_wiki_image
 
 def main():
-    gameplay()
+
 main()
