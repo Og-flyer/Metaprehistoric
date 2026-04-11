@@ -1,5 +1,5 @@
 import streamlit as st
-from stats import find_creature, loadDATA, locate_Answer
+from stats import find_creature, loadDATA, locate_Answer,locate_Daily_Answer
 from streamlit_searchbox import st_searchbox
 
 def search_creatures(query):
@@ -73,13 +73,16 @@ def game(Daily_chosen):
     return None
 
 def Practice():
-    if "daily" not in st.session_state:
-        st.session_state.daily = locate_Answer()
-    Daily_chosen = st.session_state.daily 
+    st.session_state.choose = locate_Answer()
+    Daily_chosen = st.session_state.choose 
     game(Daily_chosen)
     return None
 
 def Daily():
+    if "daily" not in st.session_state:
+        st.session_state.daily = locate_Daily_Answer()
+    Daily_chosen = st.session_state.daily
+    game(Daily_chosen)
     return None
 
 if "mode" not in st.session_state:

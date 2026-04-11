@@ -1,5 +1,8 @@
 import random
 import json
+import datetime
+import hashlib
+import requests
 
 def loadDATA():
     with open("data.json") as f:
@@ -11,12 +14,20 @@ def locate_Answer():
     chosen = random.choice(creatures)
     return chosen
 
+def locate_Daily_Answer():
+    creatures = loadDATA()
+    today = str(datetime.date.today())
+    hash_val = int(hashlib.md5(today.encode()).hexdigest(), 16)
+    return creatures[hash_val % len(creatures)]
+
 def find_creature(name):
     creatures = loadDATA()
     for creature in creatures:
         if creature["name"].lower() == name.lower():
             return creature
     return None
+
+def get_wiki_image(wiki):
 
 def gameplay():
     Daily_chosen = locate_Answer()
